@@ -1,12 +1,13 @@
 # DataMatrixJuniorPrivacy
 
-Статичные страницы Privacy Policy и Terms of Use для приложения **DataMatrix Junior**, только на английском
+Статичные страницы Privacy Policy, Terms of Use и Support для приложения **DataMatrix Junior**, только на английском
 (первая локаль приложения en-US). Подключён сабмодулем `Privacy/` в репозиторий приложения.
 
 | Файл | Что это |
 |---|---|
 | `index.html` | Privacy Policy |
 | `terms.html` | Terms of Use, в конце — лицензия zint (BSD-3 требует воспроизвести её в документации к приложению) |
+| `support.html` | Support: частые вопросы и контакт |
 | `style.css` | Цвета из `Common/Theme.swift` приложения, светлая и тёмная тема |
 | `icon.svg` | Иконка приложения (Björk), копия `Design/AppIcon-Bjork.svg` |
 
@@ -19,9 +20,8 @@ URL после включения Pages:
 | Поле в App Store Connect | URL |
 |---|---|
 | Privacy Policy URL | `https://codergosha.github.io/DataMatrixJuniorPrivacy/` |
+| Support URL | `https://codergosha.github.io/DataMatrixJuniorPrivacy/support.html` |
 | License Agreement (если не стандартный EULA) | `https://codergosha.github.io/DataMatrixJuniorPrivacy/terms.html` |
-
-Для App Store Connect нужен ещё **Support URL** — страницы поддержки здесь пока нет.
 
 ## App Privacy в App Store Connect
 

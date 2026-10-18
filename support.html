@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DataMatrix Junior — Support</title>
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand"><img src="icon.svg" alt="">DataMatrix Junior</div>
+      <nav>
+        <a href="index.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
+        <a href="support.html" aria-current="page">Support</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Support</h1>
+      <p class="meta">DataMatrix Junior scans and makes GS1 barcodes: GS1 DataMatrix, GS1 Digital Link QR, GS1-128,
+      EAN-13 and UPC-A.</p>
+
+      <h2>Frequently asked questions</h2>
+
+      <h3>A code says “Not GS1”, but its text looks like GTIN and lot. Why?</h3>
+      <p>GS1 DataMatrix, GS1-128 and GS1 QR codes start with a special FNC1 character. A plain DataMatrix or Code 128
+      with the same text has no FNC1, so GS1 scanners at a checkout or warehouse won’t read a GTIN, lot or expiry
+      from it. Make the code again in Create with the GS1 symbology.</p>
+
+      <h3>What does “Check separators” mean?</h3>
+      <p>Variable-length fields such as lot or serial must end with a separator (FNC1 in the code, GS when scanned).
+      The scanned data was missing one, and the app restored it from the field lengths. Where two splits are possible,
+      check the code that printed it.</p>
+
+      <h3>Where do I get a GTIN?</h3>
+      <p>From your local GS1 member organization — in the US, GS1 US. DataMatrix Junior makes barcodes from numbers
+      you already own; it doesn’t issue GTINs. See Learn › Where to get a GTIN in the app.</p>
+
+      <h3>Which size should I print?</h3>
+      <p>Choose where the code will be scanned (retail checkout, healthcare, distribution) in Export: the app offers
+      the module sizes (X-dimension) from the GS1 tables and marks the target with a star. Never stretch a barcode
+      image to fit; export it at the right size instead.</p>
+
+      <h3>Where are my scans?</h3>
+      <p>The last few are under the result on the Scan screen; all of them are in Library › Scans. The app keeps
+      the latest 200 on your iPhone. Swipe a scan to delete it, or use Clear history.</p>
+
+      <h3>Can the app check Chestny ZNAK marking codes?</h3>
+      <p>It checks their structure: format, product group, part lengths and separators. Whether a code was issued
+      and is valid is confirmed only by the operator of the national system.</p>
+
+      <h3>How do I get Pro on another iPhone?</h3>
+      <p>Sign in with the same Apple Account, open Get Pro and tap Restore Purchases.</p>
+
+      <h2>Contact us</h2>
+      <p>Didn’t find an answer? Write to <a href="mailto:coder.gosha@gmail.com">coder.gosha@gmail.com</a>.
+      Please include your iPhone model, iOS version and, if you can, a screenshot or the scanned code.</p>
+    </main>
+
+    <footer>DataMatrix Junior · <a href="index.html">Privacy Policy</a> · <a href="terms.html">Terms of Use</a></footer>
+  </div>
+</body>
+</html>
